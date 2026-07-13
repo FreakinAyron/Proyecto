@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios Integrales | ModuStudio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ms-navbar shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <i class="bi bi-layers-half me-2"></i>MODUSTUDIO
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuOffcanvas">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title fw-bold">MODUSTUDIO</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+              <li class="nav-item ms-lg-2">
+                <a href="contacto.html" class="btn btn-ms-accent rounded-0 px-4 py-2 small">Estudio Digital</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="bg-dark text-white py-5 mb-5" style="background-color: #111 !important;">
+      <div class="container text-center py-4" data-aos="fade-down">
+        <h1 class="display-5 fw-light text-uppercase tracking-wider">Estudio de Servicios</h1>
+        <nav aria-label="breadcrumb">
+          <ul class="pagination justify-content-center small mb-0 bg-transparent">
+            <li class="breadcrumb-item"><a href="../index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+            <li class="breadcrumb-item active text-ms-gold" aria-current="page">Servicios</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container py-4 my-4">
+      <div class="row g-5 align-items-center">
+        
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="text-uppercase font-monospace text-ms-gold small tracking-wider">Metodología</span>
+          <h2 class="fw-light my-3">Planificación milimétrica</h2>
+          <p class="text-muted small mb-4">Cada obra se ejecuta siguiendo fases estrictas de control de calidad, asegurando que el diseño final sea idéntico al renderizado inicial.</p>
+          
+          <div class="mb-2 small text-muted font-monospace d-flex justify-content-between"><span>Fase 1: Modelado 3D Digital</span><span>100%</span></div>
+          <div class="progress rounded-0 mb-4" style="height: 4px;">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;"></div>
+          </div>
+
+          <div class="mb-2 small text-muted font-monospace d-flex justify-content-between"><span>Fase 2: Automatización y Domótica</span><span>75%</span></div>
+          <div class="progress rounded-0" style="height: 4px;">
+            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #c5a880;"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="accordion accordion-flush" id="serviciosAccordion">
+            
+            <div class="accordion-item bg-transparent border-bottom border-secondary border-opacity-20">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-dark fw-semibold rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#panel1">
+                  ¿Cómo funciona el sistema de mobiliario inteligente?
+                </button>
+              </h2>
+              <div id="panel1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+                <div class="accordion-body text-muted small">
+                  Diseñamos paneles modulares motorizados que ocultan camas, cocinas u oficinas completas tras muros falsos, optimizando el espacio al máximo cuando no se usan.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom border-secondary border-opacity-20">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-dark fw-semibold rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#panel2">
+                  ¿El servicio incluye la gestión total de la obra?
+                </button>
+              </h2>
+              <div id="panel2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+                <div class="accordion-body text-muted small">
+                  Sí, nos encargamos desde el plano preliminar y la importación de materiales premium hasta la calibración de los sistemas automatizados de iluminación.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container py-5 my-5 border-top">
+      <h3 class="text-center fw-light text-uppercase tracking-wider mb-5">Líneas de Especialización</h3>
+      
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <div class="col" data-aos="fade-up">
+          <article class="card h-100 rounded-0 border-0 bg-white shadow-sm p-3">
+            <img src="/img/img6-sala.png" class="card-img-top rounded-0" alt="Arquitectura Modular">
+            <div class="card-body px-0 pb-0 d-flex flex-column">
+              <span class="badge border border-dark text-dark font-monospace mb-2 align-self-start rounded-0 text-uppercase px-2" style="font-size:0.65rem;">Línea Exclusiva</span>
+              <h5 class="card-title fw-semibold mb-2">Arquitectura Modular</h5>
+              <p class="card-text text-muted small flex-grow-1">Estructuras internas móviles que se transforman según las necesidades de espacio de tu día a día.</p>
+              <a href="contacto.html" class="btn btn-outline-dark btn-sm rounded-0 mt-3 align-self-start px-3">Solicitar Dossier</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <article class="card h-100 rounded-0 border-0 bg-white shadow-sm p-3">
+            <img src="/img/img3-oficina.png" class="card-img-top rounded-0" alt="Automatización Invisible">
+            <div class="card-body px-0 pb-0 d-flex flex-column">
+              <span class="badge bg-ms-gold font-monospace mb-2 align-self-start rounded-0 text-uppercase px-2" style="font-size:0.65rem;">Domótica</span>
+              <h5 class="card-title fw-semibold mb-2">Automatización Invisible</h5>
+              <p class="card-text text-muted small flex-grow-1">Calibración de iluminación biodinámica y climatización controlada por voz que se integra en muros.</p>
+              <a href="contacto.html" class="btn btn-outline-dark btn-sm rounded-0 mt-3 align-self-start px-3">Solicitar Dossier</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <article class="card h-100 rounded-0 border-0 bg-white shadow-sm p-3">
+            <img src="/img/img4-sala.png" class="card-img-top rounded-0" alt="Curaduría Acústica">
+            <div class="card-body px-0 pb-0 d-flex flex-column">
+              <span class="badge border border-dark text-dark font-monospace mb-2 align-self-start rounded-0 text-uppercase px-2" style="font-size:0.65rem;">Premium</span>
+              <h5 class="card-title fw-semibold mb-2">Curaduría Acústica</h5>
+              <p class="card-text text-muted small flex-grow-1">Aislamiento acústico de alta gama mediante revestimientos de madera natural y paneles fonoabsorbentes ocultos.</p>
+              <a href="contacto.html" class="btn btn-outline-dark btn-sm rounded-0 mt-3 align-self-start px-3">Solicitar Dossier</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white-50 py-5 border-top border-secondary" style="background-color: #0d0d0d !important;">
+    <div class="container text-center">
+      <h4 class="fw-bold text-white mb-3">MODUSTUDIO</h4>
+      <p class="small mb-4">Arquitectura de interiores avanzada para mentes minimalistas.</p>
+      <hr class="border-secondary opacity-25 my-4" />
+      <p class="small text-muted mb-0">© 2026 ModuStudio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
