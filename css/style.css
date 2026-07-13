@@ -143,13 +143,48 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 
 
-@media (max-width: 991.98px) {
-  .ms-hero { height: 70vh; }
-  .ms-hero h1 { font-size: 2.1rem !important; }
-}
 
-@media (max-width: 575.98px) {
-  body { padding-top: 70px; }
-  .ms-hero { height: 75vh; }
-  .ms-hero h1 { font-size: 1.7rem !important; }
+@media (max-width: 991.98px) {
+  
+  #menuOffcanvas.offcanvas {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 280px !important; 
+    height: 100vh !important; 
+    background-color: #111111 !important; 
+    z-index: 1050 !important;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5) !important;
+    display: none; 
+  }
+
+  
+  #menuOffcanvas.offcanvas.show {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  
+  .offcanvas-body {
+    background-color: #111111 !important;
+    padding: 2rem 1.5rem !important;
+  }
+
+  
+  .offcanvas .nav-link {
+    font-size: 1.15rem !important;
+    color: #ffffff !important; 
+    padding: 0.9rem 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+    display: block !important;
+  }
+
+  .offcanvas .nav-link:hover,
+  .offcanvas .nav-link.active {
+    color: var(--modu-gold) !important;
+  }
+
+  .offcanvas .nav-item:last-child {
+    margin-top: 2rem !important;
+  }
 }
