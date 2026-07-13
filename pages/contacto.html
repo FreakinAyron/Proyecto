@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | ModuStudio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ms-navbar shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <i class="bi bi-layers-half me-2"></i>MODUSTUDIO
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuOffcanvas">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title fw-bold">MODUSTUDIO</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+              <li class="nav-item ms-lg-2">
+                <a href="contacto.html" class="btn btn-ms-accent rounded-0 px-4 py-2 small">Estudio Digital</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="bg-dark text-white py-5 mb-5" style="background-color: #111 !important;">
+      <div class="container text-center py-4" data-aos="fade-down">
+        <h1 class="display-5 fw-light text-uppercase tracking-wider">Agendar Consulta</h1>
+        <nav aria-label="breadcrumb">
+          <ul class="pagination justify-content-center small mb-0 bg-transparent">
+            <li class="breadcrumb-item"><a href="../index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+            <li class="breadcrumb-item active text-ms-gold" aria-current="page">Contacto</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="row g-5">
+        
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="text-uppercase font-monospace text-ms-gold small tracking-wider">Contacto Directo</span>
+          <h2 class="fw-light my-3">Inicia tu proyecto</h2>
+          <p class="text-muted small mb-4">Completa los datos del formulario de requerimientos técnicos. Nuestro equipo revisará el caso para coordinar una primera sesión de renderizado.</p>
+          
+          <form id="moduContactForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label small font-monospace text-muted">Nombre Completo</label>
+              <input type="text" class="form-control rounded-0" id="nombre" required placeholder="Ej. Juan Pérez" />
+              <div class="invalid-feedback small">Por favor, ingresa tu nombre completo.</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="correo" class="form-label small font-monospace text-muted">Correo Electrónico</label>
+                <input type="email" class="form-control rounded-0" id="correo" required placeholder="nombre@correo.com" />
+                <div class="invalid-feedback small">Ingresa un correo electrónico válido.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="telefono" class="form-label small font-monospace text-muted">Teléfono de Contacto</label>
+                <input type="tel" class="form-control rounded-0" id="telefono" required pattern="[0-9]{9}" placeholder="999888777" />
+                <div class="invalid-feedback small">Ingresa un número telefónico de 9 dígitos.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="asunto" class="form-label small font-monospace text-muted">Asunto del Requerimiento</label>
+              <input type="text" class="form-control rounded-0" id="asunto" required placeholder="Ej. Diseño de Sala Modular" />
+              <div class="invalid-feedback small">Por favor, define el asunto de tu mensaje.</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="mensaje" class="form-label small font-monospace text-muted">Descripción del Espacio</label>
+              <textarea class="form-control rounded-0" id="mensaje" rows="4" required placeholder="Detalla las medidas aproximadas o estilo de tu preferencia..."></textarea>
+              <div class="invalid-feedback small">Ingresa una breve descripción.</div>
+            </div>
+
+            <div class="mb-4 d-none" id="progressWrapper">
+              <div class="progress rounded-0" style="height: 4px;">
+                <div id="sendingProgressBar" class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+              </div>
+              <small class="text-muted font-monospace d-block mt-1 small">Procesando requerimiento digital...</small>
+            </div>
+
+            <button type="submit" class="btn btn-dark rounded-0 px-4 py-2 text-uppercase font-monospace tracking-wider btn-sm">Enviar Solicitud</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="p-4 bg-white shadow-sm border border-secondary border-opacity-10 h-100 d-flex flex-column">
+            <span class="text-uppercase font-monospace text-ms-gold small tracking-wider">Ubicación Principal</span>
+            <h4 class="fw-light my-2">El Estudio Físico</h4>
+            <p class="text-muted small mb-4"><i class="bi bi-geo-alt me-2"></i>Av. Innovación Tecnológica 404, San Isidro, Lima - Perú</p>
+            
+            <div class="ratio ratio-4x3 flex-grow-1 border border-secondary border-opacity-10">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15600.73179069502!2d-77.03450099999999!3d-12.0993056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86514eecb2f%3A0x6338abf3df80f2d1!2sSan%20Isidro!5e0!3m2!1ses!2spe!4v1719700000000!5m2!1ses!2spe" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white-50 py-5 border-top border-secondary" style="background-color: #0d0d0d !important;">
+    <div class="container text-center">
+      <h4 class="fw-bold text-white mb-3">MODUSTUDIO</h4>
+      <p class="small mb-4">Arquitectura de interiores avanzada para mentes minimalistas.</p>
+      <hr class="border-secondary opacity-25 my-4" />
+      <p class="small text-muted mb-0">© 2026 ModuStudio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+    <div id="contactoSuccessToast" class="toast text-bg-dark border-0 rounded-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-dark text-white border-bottom border-secondary rounded-0">
+        <strong class="me-auto"><i class="bi bi-check-circle-fill text-ms-gold me-2"></i>¡Mensaje Recibido!</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body text-white-50 small">
+        Tu solicitud ha sido validada con éxito. Nos comunicaremos en menos de 24 horas.
+      </div>
+    </div>
+  </div>
+
+  <button id="scrollTopBtn" title="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
